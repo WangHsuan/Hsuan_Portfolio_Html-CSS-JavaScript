@@ -1,0 +1,225 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:transparent;
+    z-index:2;
+   
+}
+
+.header .header-content{
+    margin:0 15px;
+}
+
+.site-title-block{
+    position:relative;
+    float:left;
+    z-index:1;
+    text-align:center;
+}
+
+.site-title{
+    color:#49515d;
+    font-size:20px;
+    font-weight: 500;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    line-height:1;
+    margin:38px 0 0;
+}
+
+.site-nav{
+    float:right;
+}
+
+.site-main-menu{
+    display:flex;
+    flex-direction: row;
+    margin-top:35px;
+    margin-left: 20px;
+}
+
+
+.site-main-menu li a{
+    margin:0 20px;
+    padding:8px 0;
+    text-align: center;
+    color:#49515d;
+    font-size:15px;
+    line-height:1px;
+    font-weight:400;
+    position:relative;
+    text-decoration: none;
+    outline:0px;
+    z-index:3;
+    font-family:'Montserrat', Helvetica, sans-serif;
+}
+
+.site-main-menu li a:hover{
+    border-bottom:2px solid  #2eca7f;
+    color:black;
+}
+
+/* .clearfix {
+    overflow: auto;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ */
+
+
+/* Main */
+.site-main{
+    width:100%;
+    height:auto;
+    position:relative;
+}
+.pt-wrapper{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+}
+.subpages{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    overflow: hidden;
+}
+
+.app{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin:50px 0px 30px 0px;
+    text-align: center;
+    font-size:40px;
+    font-family:'Montserrat', Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+header p{
+    font-size:25px;
+    margin:30px 0px 30px 0px;
+    text-align:center;
+    font-family:'Montserrat', Helvetica, sans-serif;
+}
+
+.pads{
+    background: lightblue;
+    width:80%;
+    display: flex;
+}
+.pads >div{
+    height:100px;
+    width:100px;
+    flex:1;
+}
+.pad1{
+    background:#60d394;
+}
+.pad2{
+    background:#d36060;
+}
+.pad3{
+    background:#c060d3;
+}
+.pad4{
+    background:#d3d160;
+}
+.pad5{
+    background:#606db3;
+}
+.pad6{
+    background:#60c2d3;
+}
+
+.visual >div{
+    position:absolute;
+    bottom:0;
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    transform: scale(1);
+    z-index:-1;
+}
+
+@keyframes jump {
+    0% {
+      bottom: 30%;
+      left: 20%;
+    }
+    25% {
+        bottom: 70%;
+        left: 35%;
+      }
+    50% {
+      bottom: 50%;
+      left: 50%;
+    }
+    75% {
+        bottom: 70%;
+        left: 65%;
+      }
+  
+    100% {
+      bottom: 00%;
+      left: 80%;
+    }
+  }

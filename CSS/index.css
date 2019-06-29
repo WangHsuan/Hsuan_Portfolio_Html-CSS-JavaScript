@@ -1,0 +1,277 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header{
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:transparent;
+    z-index:2;
+   
+}
+
+.header .header-content{
+    margin:0 15px;
+}
+
+.site-title-block{
+    position:relative;
+    float:left;
+    z-index:1;
+    text-align:center;
+}
+
+.site-title{
+    color:#49515d;
+    font-size:20px;
+    font-weight: 500;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    line-height:1;
+    margin:38px 0 0;
+}
+
+.site-nav{
+    float:right;
+}
+
+.site-main-menu{
+    display:flex;
+    flex-direction: row;
+    margin-top:35px;
+    margin-left: 20px;
+}
+
+
+.site-main-menu li a{
+    margin:0 20px;
+    padding:8px 0;
+    text-align: center;
+    color:#49515d;
+    font-size:15px;
+    line-height:1px;
+    font-weight:400;
+    position:relative;
+    text-decoration: none;
+    outline:0px;
+    font-family:'Montserrat', Helvetica, sans-serif;
+}
+
+.site-main-menu li a:hover{
+    border-bottom:2px solid  #2eca7f;
+    color:black;
+}
+
+.clearfix {
+    overflow: auto;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+/* Main */
+.site-main{
+    width:100%;
+    height:auto;
+    position:relative;
+}
+.pt-wrapper{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    z-index: 1;
+}
+.subpages{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 100px;
+    overflow: hidden;
+}
+.pt-page{
+    margin:0 15px;
+    width:auto;
+    border:1px solid green;
+    border-radius: 5px;
+}
+
+.pt-page-currtent{
+    visibility: visible;
+    z-index: 90;
+    opacity: 1;
+    overflow: visible;
+    height: auto;
+}
+
+.section-inner{
+    position: relative;
+    background-color: #fff;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+}
+
+.photo img{
+    height:230px;
+    width:210px;
+    border:3px solid white;
+    border-radius: 5px;
+    float:left;
+    margin-left: 20px;
+    box-shadow: 5px 10px #888888;
+}
+.photo .photo-content{
+    margin-left:350px;
+    margin-top:60px;
+
+}
+.photo-content h1{
+    text-align: center;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size:30px;
+    color:whitesmoke;
+}
+
+.photo-content h2{
+    text-align: center;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size:20px;
+    margin-top:5px;
+    color:whitesmoke;
+}
+
+.start-page-content .social-links {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+        margin-top: 0px;
+    margin-top: 20px;
+}
+
+.social-links a{
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border-radius: 24px;
+    background-color: #fff;
+    margin: 0 1px;
+    color: #9e9e9e;
+    text-align: center;
+}
+
+
+.social-links a i{
+    line-height: 36px;
+    font-size: 16px;
+}
+
+.start-page-content .page-header{
+    position:relative;
+    background-color:#2eca7f;
+    padding:50px;
+    background-image: url(../img/sp_main_bg.png);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* Page Content */
+
+.page-content .block-title{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.page-content .block-title .About{
+    height:125px;
+    width:420px;
+    margin:20px 20px 20px 40px;
+    
+    font-family:'Montserrat', Helvetica, sans-serif;
+   
+    line-height: 1.5;
+}
+
+.page-content .block-title .About h3{
+    font-weight: 600;
+    font-size:21;
+}
+
+.page-content .block-title .About h3 span{
+    color:#2eca7f;
+}
+
+.page-content .block-title h5{
+    display: inline-block;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    line-height: 1.5;
+}
+.page-content .block-title p{
+    display: inline-block;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    line-height: 1.5;
+}
+.page-content .block-title .About-content{
+    margin:30px 10px 20px 20px;
+}
+
+.page-content .block-title .About-content p{
+    color:#9e9e9e;
+    margin-left:10px;
+}
+
+.page-content .block-title .About-content p a{
+    text-decoration: none;
+    color:#9e9e9e;
+}
